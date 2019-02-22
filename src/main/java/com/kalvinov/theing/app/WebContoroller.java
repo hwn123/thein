@@ -10,7 +10,7 @@ import java.util.Map;
 
 @Controller
 public class WebContoroller {
-    @Value("${node_name}")
+    @Value("${NODE_NAME}")
     private String node_name;
 
     @GetMapping("/status")
