@@ -10,15 +10,15 @@ import java.util.Map;
 
 @Controller
 public class WebContoroller {
-    @Value("${NODE_NAME}")
-    private String node_name;
+    @Value("${nodename}")
+    private String nodename;
 
     @GetMapping("/status")
     @ResponseBody
     public Map<String, String> status(){
         Map<String, String> statusMap = new HashMap();
         statusMap.put("status", "healthy");
-        statusMap.put("node_name", node_name);
+        statusMap.put("node_name", nodename);
         return statusMap;
     }
 }
