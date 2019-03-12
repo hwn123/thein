@@ -1,5 +1,6 @@
 package com.kalvinov.theing.app;
 
+import com.amazonaws.xray.spring.aop.XRayEnabled;
 import com.google.common.collect.Lists;
 import com.kalvinov.theing.app.dao.TheinRepository;
 import com.kalvinov.theing.app.model.Record;
@@ -13,7 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+@XRayEnabled
 @Controller
 public class WebContoroller {
     @Autowired
