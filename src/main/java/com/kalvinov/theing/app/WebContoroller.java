@@ -14,8 +14,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-@XRayEnabled
+
 @Controller
+@XRayEnabled
 public class WebContoroller {
     @Autowired
     private TheinRepository theinRepository;
